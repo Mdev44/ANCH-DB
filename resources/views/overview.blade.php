@@ -14,8 +14,6 @@
         </div>
     </section>
 
-    
-
     <script>
         function SearchFuntion() {
 		  var input, filter, table, tr, td, i, txtValue;
