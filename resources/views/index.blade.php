@@ -1,11 +1,9 @@
 @extends('layouts/default')
 
 @section('page-content')
-<script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<section class="relative min-h-screen flex items-center">
+    <section class="relative min-h-screen flex items-center">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl sm:text-7xl pb-2"> Animal Crossing: <span class="text-forest-green-crayola">  New Horizons </span></h2>
             <h3 class="text-2xl sm:text-4xl italic"> Database </h3>
