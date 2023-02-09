@@ -22,7 +22,7 @@
 		    table = document.getElementById("placeForData");
 		     tr = table.getElementsByTagName("form");
 
-		    // Loop through all table rows, and hide those who don't match the search query
+		    // Loop through all table rows, and hide those which don't match the search query
 		    for (i = 0; i < tr.length; i++) {
 			    td = tr[i].getElementsByTagName("h3")[0];
 			    if (td) {
