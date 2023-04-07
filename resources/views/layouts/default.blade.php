@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ asset('js/app.js') }}" defer></script>
     @vite('resources/css/app.css')
     <title>ACNH DB</title>  
 </head>
-<body onload="checkDarkMode();retrieveData();" class="bg-gray-100 text-black dark:bg-gray-800 dark:text-white">
+<body onload="checkDarkMode();" class="bg-gray-100 text-black dark:bg-gray-800 dark:text-white">
     <header class="fixed bg-forest-green-crayola top-0 left-0 right-0 z-50">
         <div class="container mx-auto flex justify-between p-4">
             <h1 class="text-xl font-bold text-white"> ACNH-DB  </h1>              
@@ -23,7 +24,8 @@
     </main>
     
     <footer>
-        <div class="container mx-auto p-4">
+        
+    <div class="container mx-auto p-4">
             <p> &copy; Morris de Vries | ACNH-DB </p>
         </div>
         
@@ -48,21 +50,24 @@
     </footer>
 
     <script>
-        function checkDarkMode() { 
-            if (localStorage.getItem('isDarkMode') === 'true') {
-                document.getElementById('site').classList.toggle('dark');
-            }
-        }
-        
-        function darkToggle() {
+
+    function checkDarkMode() { 
+        if (localStorage.getItem('isDarkMode') === 'true') {
             document.getElementById('site').classList.toggle('dark');
-            if (localStorage.getItem('isDarkMode') === 'true') {
-                localStorage.setItem('isDarkMode', false);
-            }
-            else {
-                localStorage.setItem('isDarkMode', true);
-            }               
         }
+    }
+
+    function darkToggle() {
+        document.getElementById('site').classList.toggle('dark');
+        if (localStorage.getItem('isDarkMode') === 'true') {
+            localStorage.setItem('isDarkMode', false);
+        }
+        else {
+            localStorage.setItem('isDarkMode', true);
+        }               
+    }
+
     </script>
+    
 </body>
 </html>

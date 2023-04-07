@@ -12,6 +12,9 @@
         <div class="absolute bottom-0 left-0 right-0 p-20">
             <p class="text-center">Scroll to learn more</p>
         </div>
+        <div id="app">
+        <hello-vue />
+    </div> 
     </section>
 
     <section class="py-20">
@@ -40,7 +43,7 @@
                     <div class="p-4 bg-fish h-full rounded-lg">
                         <h3 class="text-xl font-bold mb-3">Fish</h3>
                         <p class="mb-3">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure praesentium velit sequi voluptate molestiae. Tempora unde voluptatem eius ea doloribus aut eligendi repudiandae corporis iusto. Velit facere alias sint cum repellat officiis, consequuntur earum facilis.   
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure praesentium velit sequi voluptate molestiae. Tempora unde voluptatem eius ea doloribus aut eligendi repudiandae corporis iusto. Velit facere alias sint cum repellat officiis, consequuntur earum facilis.   
                         </p>
                         <form method="post" action="/overview">
                             @csrf

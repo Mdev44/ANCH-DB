@@ -14,8 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    User::query()->where('email', 'morris@gmail.com')->get();
+    $users = User::all();
+    $users;
+
+    return view('index', ['users' => $users]);
 })->name('home');
+
+Route::resource('/user/{id}', [UserController::class, 'show']);
+// Controller functie koppelen
 
 Route::get('/about', function () {
     return view('about');
